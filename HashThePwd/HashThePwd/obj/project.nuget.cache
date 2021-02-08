@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "E1uU4wMI/TOxy7O9oE8ups/fGlloMj8TH5trcOFP6sH9L2uusnVMB2VAn+pxJ6gjANUVGruXWzWYvUucn1kUJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\HashThePwd\\HashThePwd\\HashThePwd.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\portable.bouncycastle\\1.8.9\\portable.bouncycastle.1.8.9.nupkg.sha512"
+  ],
+  "logs": []
+}

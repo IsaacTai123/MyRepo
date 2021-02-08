@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\bin\Debug\netcoreapp3.1\LINQFromVanket.exe
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\bin\Debug\netcoreapp3.1\LINQFromVanket.deps.json
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\bin\Debug\netcoreapp3.1\LINQFromVanket.runtimeconfig.json
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\bin\Debug\netcoreapp3.1\LINQFromVanket.runtimeconfig.dev.json
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\bin\Debug\netcoreapp3.1\LINQFromVanket.dll
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\bin\Debug\netcoreapp3.1\LINQFromVanket.pdb
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\obj\Debug\netcoreapp3.1\LINQFromVanket.csprojAssemblyReference.cache
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\obj\Debug\netcoreapp3.1\LINQFromVanket.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\obj\Debug\netcoreapp3.1\LINQFromVanket.AssemblyInfo.cs
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\obj\Debug\netcoreapp3.1\LINQFromVanket.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\obj\Debug\netcoreapp3.1\LINQFromVanket.dll
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\obj\Debug\netcoreapp3.1\LINQFromVanket.pdb
+C:\Users\user\source\repos\LINQFromVanket\LINQFromVanket\obj\Debug\netcoreapp3.1\LINQFromVanket.genruntimeconfig.cache

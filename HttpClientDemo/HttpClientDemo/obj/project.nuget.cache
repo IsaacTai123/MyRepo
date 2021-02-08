@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "c66cAq7mQfypcEW3OKEw5S5zITk0qV7IOmorPZOPA/wwjFrHYmpIZ2lsUBTwThEb7pHYsofI0BVF8n2lD/qYHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\HttpClientDemo\\HttpClientDemo\\HttpClientDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

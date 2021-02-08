@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RQBqQUr9U4RuhtPAd2igIXzW+mpyPfrnrMA0MGFx/0Hbq9bBLcPpLvtIJikm6921sH/i9aVpQ44YZ8rHScKcvw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\SecureStoreDataInCookieAndSession\\SecureStoreDataInCookieAndSession\\SecureStoreDataInCookieAndSession.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

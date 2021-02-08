@@ -1,0 +1,15 @@
+{
+  "SupportedCultures": [
+    "en-GB",
+    "zh-TW",
+    "zh-CN"
+  ],
+  "CustomObject": {
+    "Property": {
+      "SubProperty1": 1,
+      "SubProperty2": true,
+      "SubProperty3": "This is sub property."
+    }
+  },
+  "DBConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=_CHANGE_ME;Trusted_Connection=True;MultipleActiveResultSets=true"
+}

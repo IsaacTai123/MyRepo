@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\HashThePwd\HashThePwd\bin\Debug\netcoreapp3.1\HashThePwd.exe
+C:\Users\user\source\repos\HashThePwd\HashThePwd\bin\Debug\netcoreapp3.1\HashThePwd.deps.json
+C:\Users\user\source\repos\HashThePwd\HashThePwd\bin\Debug\netcoreapp3.1\HashThePwd.runtimeconfig.json
+C:\Users\user\source\repos\HashThePwd\HashThePwd\bin\Debug\netcoreapp3.1\HashThePwd.runtimeconfig.dev.json
+C:\Users\user\source\repos\HashThePwd\HashThePwd\bin\Debug\netcoreapp3.1\HashThePwd.dll
+C:\Users\user\source\repos\HashThePwd\HashThePwd\bin\Debug\netcoreapp3.1\HashThePwd.pdb
+C:\Users\user\source\repos\HashThePwd\HashThePwd\bin\Debug\netcoreapp3.1\BCrypt.Net-Next.dll
+C:\Users\user\source\repos\HashThePwd\HashThePwd\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\user\source\repos\HashThePwd\HashThePwd\obj\Debug\netcoreapp3.1\HashThePwd.csprojAssemblyReference.cache
+C:\Users\user\source\repos\HashThePwd\HashThePwd\obj\Debug\netcoreapp3.1\HashThePwd.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\HashThePwd\HashThePwd\obj\Debug\netcoreapp3.1\HashThePwd.AssemblyInfo.cs
+C:\Users\user\source\repos\HashThePwd\HashThePwd\obj\Debug\netcoreapp3.1\HashThePwd.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\HashThePwd\HashThePwd\obj\Debug\netcoreapp3.1\HashThePwd.csproj.CopyComplete
+C:\Users\user\source\repos\HashThePwd\HashThePwd\obj\Debug\netcoreapp3.1\HashThePwd.dll
+C:\Users\user\source\repos\HashThePwd\HashThePwd\obj\Debug\netcoreapp3.1\HashThePwd.pdb
+C:\Users\user\source\repos\HashThePwd\HashThePwd\obj\Debug\netcoreapp3.1\HashThePwd.genruntimeconfig.cache

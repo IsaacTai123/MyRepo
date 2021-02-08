@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\Cryptography\Cryptography\bin\Debug\netcoreapp3.1\Cryptography.exe
+C:\Users\user\source\repos\Cryptography\Cryptography\bin\Debug\netcoreapp3.1\Cryptography.deps.json
+C:\Users\user\source\repos\Cryptography\Cryptography\bin\Debug\netcoreapp3.1\Cryptography.runtimeconfig.json
+C:\Users\user\source\repos\Cryptography\Cryptography\bin\Debug\netcoreapp3.1\Cryptography.runtimeconfig.dev.json
+C:\Users\user\source\repos\Cryptography\Cryptography\bin\Debug\netcoreapp3.1\Cryptography.dll
+C:\Users\user\source\repos\Cryptography\Cryptography\bin\Debug\netcoreapp3.1\Cryptography.pdb
+C:\Users\user\source\repos\Cryptography\Cryptography\obj\Debug\netcoreapp3.1\Cryptography.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Cryptography\Cryptography\obj\Debug\netcoreapp3.1\Cryptography.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Cryptography\Cryptography\obj\Debug\netcoreapp3.1\Cryptography.AssemblyInfo.cs
+C:\Users\user\source\repos\Cryptography\Cryptography\obj\Debug\netcoreapp3.1\Cryptography.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Cryptography\Cryptography\obj\Debug\netcoreapp3.1\Cryptography.dll
+C:\Users\user\source\repos\Cryptography\Cryptography\obj\Debug\netcoreapp3.1\Cryptography.pdb
+C:\Users\user\source\repos\Cryptography\Cryptography\obj\Debug\netcoreapp3.1\Cryptography.genruntimeconfig.cache
+C:\Users\user\source\repos\Cryptography\Cryptography\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\user\source\repos\Cryptography\Cryptography\obj\Debug\netcoreapp3.1\Cryptography.csproj.CopyComplete

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/EscdKdIZn72Z3o5Xbfhqr24I2x5mBeRGodNRbKe2SamrQEC4CBw9Vq55AUJVWjuZ19tUe7LRmZZ26D1pk4K/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\Cryptography\\Cryptography\\Cryptography.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\microsoft.visualbasic.10.3.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

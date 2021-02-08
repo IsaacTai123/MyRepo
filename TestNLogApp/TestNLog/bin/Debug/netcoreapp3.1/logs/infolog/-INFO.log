@@ -1,0 +1,16 @@
+2021-02-03 16:50:31.4128 Info Message Template Auto Format enabled
+2021-02-03 16:50:31.5078 Info Adding target FileTarget(Name=First)
+2021-02-03 16:50:31.5078 Info Adding target FileTarget(Name=Second)
+2021-02-03 16:50:31.5554 Info Validating config: TargetNames=First, Second, ConfigItems=40, FilePath=C:\Users\user\source\repos\TestNLogApp\TestNLog\bin\Debug\netcoreapp3.1\NLog.config
+2021-02-03 17:21:09.0754 Info Message Template Auto Format enabled
+2021-02-03 17:21:09.1571 Info Adding target FileTarget(Name=First)
+2021-02-03 17:21:09.1571 Info Adding target FileTarget(Name=Second)
+2021-02-03 17:21:09.2234 Info Validating config: TargetNames=First, Second, ConfigItems=40, FilePath=C:\Users\user\source\repos\TestNLogApp\TestNLog\bin\Debug\netcoreapp3.1\NLog.config
+2021-02-03 17:21:43.9919 Info Message Template Auto Format enabled
+2021-02-03 17:21:44.0741 Info Adding target FileTarget(Name=First)
+2021-02-03 17:21:44.0741 Info Adding target FileTarget(Name=Second)
+2021-02-03 17:21:44.1207 Info Validating config: TargetNames=First, Second, ConfigItems=40, FilePath=C:\Users\user\source\repos\TestNLogApp\TestNLog\bin\Debug\netcoreapp3.1\NLog.config
+2021-02-03 17:28:37.8900 Info Message Template Auto Format enabled
+2021-02-03 17:28:37.9863 Info Adding target FileTarget(Name=First)
+2021-02-03 17:28:37.9863 Info Adding target FileTarget(Name=Second)
+2021-02-03 17:28:38.0399 Info Validating config: TargetNames=First, Second, ConfigItems=40, FilePath=C:\Users\user\source\repos\TestNLogApp\TestNLog\bin\Debug\netcoreapp3.1\NLog.config

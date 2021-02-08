@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\WhiteListApp\WhiteList\bin\Debug\WhiteList.exe.config
+C:\Users\user\source\repos\WhiteListApp\WhiteList\bin\Debug\WhiteList.exe
+C:\Users\user\source\repos\WhiteListApp\WhiteList\bin\Debug\WhiteList.pdb
+C:\Users\user\source\repos\WhiteListApp\WhiteList\obj\Debug\WhiteList.csprojAssemblyReference.cache
+C:\Users\user\source\repos\WhiteListApp\WhiteList\obj\Debug\WhiteList.Form1.resources
+C:\Users\user\source\repos\WhiteListApp\WhiteList\obj\Debug\WhiteList.Properties.Resources.resources
+C:\Users\user\source\repos\WhiteListApp\WhiteList\obj\Debug\WhiteList.csproj.GenerateResource.cache
+C:\Users\user\source\repos\WhiteListApp\WhiteList\obj\Debug\WhiteList.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\WhiteListApp\WhiteList\obj\Debug\WhiteList.exe
+C:\Users\user\source\repos\WhiteListApp\WhiteList\obj\Debug\WhiteList.pdb

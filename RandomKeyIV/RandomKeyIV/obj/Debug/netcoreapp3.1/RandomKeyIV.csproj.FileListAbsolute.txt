@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\bin\Debug\netcoreapp3.1\RandomKeyIV.exe
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\bin\Debug\netcoreapp3.1\RandomKeyIV.deps.json
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\bin\Debug\netcoreapp3.1\RandomKeyIV.runtimeconfig.json
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\bin\Debug\netcoreapp3.1\RandomKeyIV.runtimeconfig.dev.json
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\bin\Debug\netcoreapp3.1\RandomKeyIV.dll
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\bin\Debug\netcoreapp3.1\RandomKeyIV.pdb
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\obj\Debug\netcoreapp3.1\RandomKeyIV.csprojAssemblyReference.cache
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\obj\Debug\netcoreapp3.1\RandomKeyIV.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\obj\Debug\netcoreapp3.1\RandomKeyIV.AssemblyInfo.cs
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\obj\Debug\netcoreapp3.1\RandomKeyIV.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\obj\Debug\netcoreapp3.1\RandomKeyIV.dll
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\obj\Debug\netcoreapp3.1\RandomKeyIV.pdb
+C:\Users\user\source\repos\RandomKeyIV\RandomKeyIV\obj\Debug\netcoreapp3.1\RandomKeyIV.genruntimeconfig.cache
