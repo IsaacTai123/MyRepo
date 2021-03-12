@@ -243,6 +243,27 @@ namespace blackBoard
             {
                 Console.WriteLine("結果：{0}", item.Value);
             }
+
+
+
+            // testing calling static method and nonestatic
+            NoneStatic non = new NoneStatic();
+            non.test();
+
+
+            staticmethod.test();
+
+            // calculate test
+            int rounds = 4;
+            List<int> sample = new List<int>();
+
+            if (rounds > 1)
+            {
+                for (int i = rounds; i > 1; i--)
+                {
+                    Console.WriteLine(i);
+                }
+            }
         }
 
 
@@ -323,6 +344,23 @@ namespace blackBoard
                 var str = "databack";
                 Console.WriteLine("This is a string");
                 return str;
+            }
+        }
+
+
+        public class NoneStatic
+        {
+            public void test()
+            {
+                Console.WriteLine("nonestatic");
+            }
+        }
+
+        public class staticmethod
+        {
+            public static void test()
+            {
+                Console.WriteLine("static");
             }
         }
     }

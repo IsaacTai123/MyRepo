@@ -53,7 +53,7 @@ else
         //there is a pool of clients that the client factory has that it will pull from, the reason this is important instead just create our new HTTP client every time is because
         //you can actually have socket exhaustion from having too many open clients if you don't close them properly
         //plus it caused some overhead in your machine and is just little messier to just call HTTP client directly, well now using the client factory we can create the client properly
-        //and properly make sure they're closed and all the rest, so we don't need to worry about how it is disposed, it disposed of itself just fine
+        //and properly make sure they're closed and all the rest, so we don't need to worry about how it is disposed, it disposed off itself just fine
         //and it refreshes them on a certain cycle so the DNS doesn't get stale but it also doesn't have too many open at a time, it just take care a lot of stuff behind the scenes
 
         //HttpResponseMessage response = await client.SendAsync(request);  //send the request out and get the response back
