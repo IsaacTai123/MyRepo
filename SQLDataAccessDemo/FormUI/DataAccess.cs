@@ -16,16 +16,16 @@ namespace FormUI
     {
         public List<Person> GetPeople(string lastName)
         {
-            //throw new NotFiniteNumberException(); // allow us to compile the application while we're working on it
+            ////throw new NotFiniteNumberException(); // allow us to compile the application while we're working on it
 
-            // this using statement is different than the outside, this allow me to call some code like with a connection and it said as soon you're done the using statement destory that connection
-            // so the using statement is very helpful for making sure we don't leave connections open to our server
-            //SQL
+            ////this using statement is different than the outside, this allow me to call some code like with a connection and it said as soon you're done the using statement destory that connection
+            ////so the using statement is very helpful for making sure we don't leave connections open to our server
+            ////SQL
             //using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("SampleDB"))) // we create a new connection to our SQL database
             //{
             //    //not safe way doing this (we need to prevent sql injection)
             //    //var output = connection.Query<Person>($"SELECT * FROM WHERE LastName = '{ lastName }'").ToList();
-                
+
             //    // use Store Procedures
             //    var output = connection.Query<Person>("dbo.People_GetByLastName @LastName", new { Lastname = lastName }).ToList();
 

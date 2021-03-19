@@ -36,7 +36,7 @@ namespace DELEGATES_OPERATOR
             Debug.WriteLine(testBoolDelegateFunction(2));
 
 
-            //using anonymoud methods
+            //using anonymous methods
             testDelegateFuction = delegate () { Debug.WriteLine("Anonymous method");  }; // this is a method how we create a function inside of a code block it is easier than having to create a seperate function in most cases
             testDelegateFuction();
 

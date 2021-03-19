@@ -231,42 +231,80 @@ namespace blackBoard
             //Console.WriteLine(remoteIp);
 
 
-            // using Regex to get the specific think you want
-            StringBuilder input = new StringBuilder();
-            input.AppendLine("A bbbb A");
-            input.AppendLine("C bbbb C");
+            //// using Regex to get the specific thing you want
+            //StringBuilder input = new StringBuilder();
+            //input.AppendLine("A bbbb A");
+            //input.AppendLine("C bbbb C");
 
-            string pattern = @"^\w"; //pattern will be any one word character 
-            Console.WriteLine(input.ToString());
-            MatchCollection matchCol = Regex.Matches(input.ToString(), pattern, RegexOptions.Multiline);
-            foreach (Match item in matchCol)
-            {
-                Console.WriteLine("結果：{0}", item.Value);
-            }
-
-
-
-            // testing calling static method and nonestatic
-            NoneStatic non = new NoneStatic();
-            non.test();
+            //string pattern = @"^\w"; //pattern will be any one word character 
+            //Console.WriteLine(input.ToString());
+            //MatchCollection matchCol = Regex.Matches(input.ToString(), pattern, RegexOptions.Multiline);
+            //foreach (Match item in matchCol)
+            //{
+            //    Console.WriteLine("結果：{0}", item.Value);
+            //}
 
 
-            staticmethod.test();
 
-            // calculate test
-            int rounds = 4;
-            List<int> sample = new List<int>();
+            //// testing calling static method and nonestatic
+            //NoneStatic non = new NoneStatic();
+            //non.test();
 
-            if (rounds > 1)
-            {
-                for (int i = rounds; i > 1; i--)
-                {
-                    Console.WriteLine(i);
-                }
-            }
+
+            //staticmethod.test();
+
+            //// calculate test
+            //int rounds = 4;
+            //List<int> sample = new List<int>();
+
+            //if (rounds > 1)
+            //{
+            //    for (int i = rounds; i > 1; i--)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+
+
+            //// 試著用用 is operator => E is T v
+            //int i = 23;
+            //object iBoxed = i;
+            //int? jnullable = 7;
+
+            //if (iBoxed is int a && jnullable is int b)
+            //{
+            //    Console.WriteLine(a + b); // output 30
+            //}
+
+            //int? number = iBoxed as int?;
+            //if (number != null)
+            //{
+            //    Console.WriteLine(number.GetType());
+            //}
+
+
+            //int? ii = iBoxed is int ? (int)iBoxed : (int?)null;
+            //if (ii != null)
+            //{
+            //    Console.WriteLine(ii.GetType());
+            //}
+
+
+            // typeof Operator
+            void PrintType<T>() => Console.WriteLine(typeof(T));
+
+            Console.WriteLine(typeof(List<string>));
+            PrintType<int>();
+            PrintType<System.Int32>();
+            PrintType<Dictionary<int, char>>();
+            // Output:
+            // System.Collections.Generic.List`1[System.String]
+            // System.Int32
+            // System.Int32
+            // System.Collections.Generic.Dictionary`2[System.Int32,System.Char]
         }
 
-
+        class Demo { };
 
 
         private static IHttpContextAccessor HttpContextAccessor;

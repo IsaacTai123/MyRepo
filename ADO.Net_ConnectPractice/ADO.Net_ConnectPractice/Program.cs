@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace ADO.Net_ConnectPractice
 {
@@ -303,44 +304,102 @@ namespace ADO.Net_ConnectPractice
             //}
 
             //DataAdapter物件實現批量修改
-            using (SqlConnection sqlconnection = new SqlConnection(connectionString))
+            //using (SqlConnection sqlconnection = new SqlConnection(connectionString))
+            //{
+            //    string sql = "Select * from dbo.Testperson";
+            //    DataSet ds = new DataSet(); //創一個dataset的記憶體資料集
+
+            //    try
+            //    {
+            //        sqlconnection.Open();
+
+            //        //DataAdapter首先將構造一個SelectCommand例項（本質就一個Command物件），然後檢查是否開啟連線，
+            //        //如果沒有開啟連線則開啟連線，緊接著呼叫DataReader介面檢索資料，最後根據維護的對映關係
+            //        SqlDataAdapter adapter = new SqlDataAdapter(sql, sqlconnection);
+
+            //        // 把adapter 檢索到得資料庫填充到 本地的 DataSet 或著 DataTable 裡面
+            //        adapter.Fill(ds);
+
+            //        // ds.Tables[ 選擇資料表名稱 ], 這邊沒有給table 命名 所以用數字 0表示第一個
+            //        for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+            //        {
+            //            Console.WriteLine(ds.Tables[0].Rows[i].RowState);//RowState：Unchanged 
+            //            Console.WriteLine(ds.Tables[0].Rows[i][2]);
+            //            ds.Tables[0].Rows[i][2] = "abc"; // 每一行的第三列都修改為abc
+            //            Console.WriteLine(ds.Tables[0].Rows[i][2]);
+            //            Console.WriteLine(ds.Tables[0].Rows[i].RowState);//RowState：Modified
+            //            Console.WriteLine();
+            //        }
+
+            //        SqlCommandBuilder cmdBuilder = new SqlCommandBuilder(adapter); //這行不能缺少，除非自定義Command賦值給adapter.UpdateCommand
+            //        Console.WriteLine("生成的Update語句：{0}", cmdBuilder.GetUpdateCommand().CommandText);
+
+            //        adapter.Update(ds);//更新到資料來源中
+            //        ds.AcceptChanges();//提交到DataTable中  提交後DataRow.RowState會修改為Unchanged
+            //    }
+            //    catch (Exception e)
+            //    {
+
+            //        throw new Exception(e.Message);
+            //    }
+            //}
+
+
+            // 自己練習一次
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 string sql = "Select * from dbo.Testperson";
-                DataSet ds = new DataSet(); //創一個dataset的記憶體資料集
+                DataSet ds = new DataSet();
 
-                try
+                sqlConnection.Open();
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, sqlConnection);
+                adapter.Fill(ds);
+
+                ds.Tables[0].TableName = "TableOne";
+
+                foreach (DataRow dataRow in ds.Tables["TableOne"].Rows)
                 {
-                    sqlconnection.Open();
-
-                    //DataAdapter首先將構造一個SelectCommand例項（本質就一個Command物件），然後檢查是否開啟連線，
-                    //如果沒有開啟連線則開啟連線，緊接著呼叫DataReader介面檢索資料，最後根據維護的對映關係
-                    SqlDataAdapter adapter = new SqlDataAdapter(sql, sqlconnection);
-
-                    // 把adapter 檢索到得資料庫填充到 本地的 DataSet 或著 DataTable 裡面
-                    adapter.Fill(ds);
-
-                    // ds.Tables[ 選擇資料表名稱 ], 這邊沒有給table 命名 所以用數字 0表示第一個
-                    for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
-                    {
-                        Console.WriteLine(ds.Tables[0].Rows[i].RowState);//RowState：Unchanged 
-                        Console.WriteLine(ds.Tables[0].Rows[i][2]);
-                        ds.Tables[0].Rows[i][2] = "abc"; // 每一行的第三列都修改為abc
-                        Console.WriteLine(ds.Tables[0].Rows[i][2]);
-                        Console.WriteLine(ds.Tables[0].Rows[i].RowState);//RowState：Modified
-                        Console.WriteLine();
-                    }
-
-                    SqlCommandBuilder cmdBuilder = new SqlCommandBuilder(adapter); //這行不能缺少，除非自定義Command賦值給adapter.UpdateCommand
-                    Console.WriteLine("生成的Update語句：{0}", cmdBuilder.GetUpdateCommand().CommandText);
-
-                    adapter.Update(ds);//更新到資料來源中
-                    ds.AcceptChanges();//提交到DataTable中  提交後DataRow.RowState會修改為Unchanged
+                    Console.WriteLine($"ID => {dataRow["id"]}, {dataRow["FirstName"]}, {dataRow["LastName"]}");
                 }
-                catch (Exception e)
+
+                //新增一筆資料
+                DataRow newRow = ds.Tables["TableOne"].NewRow();
+                newRow["FirstName"] = "Harry";
+                newRow["LastName"] = "Potter";
+                newRow["EmailAddress"] = "ddd@gmail.com";
+                ds.Tables["TableOne"].Rows.Add(newRow);
+
+                //移除一筆資料
+                //ds.Tables["TableOne"].Rows.Remove(ds.Tables["TableOne"].Rows[1]);
+                ds.Tables["TableOne"].Rows[1].Delete(); // 要移除後端Database裏面的資料 必須用Delete, 使用Remove 只會移除DataTable 裡面的資料而已
+
+
+                //for (int i = ds.Tables["TableOne"].Rows.Count - 1; i >= 0; i--)
+                //{
+                //    DataRow dr = ds.Tables["TableOne"].Rows[i];
+                //    if (dr["FirstName"].ToString() == "firstname")
+                //    {
+                //        dr.Delete();
+                //    }
+                //}
+                
+
+                //修改一筆資料
+                DataRow[] rows = ds.Tables["TableOne"].Select("id=5");
+                if (rows.Length > 0)
                 {
-
-                    throw new Exception(e.Message);
+                    rows[0]["FirstName"] = "johon";
                 }
+
+
+
+                SqlCommandBuilder cmdBuilder = new SqlCommandBuilder(adapter);
+                Console.WriteLine("生成的Update語句：{0}", cmdBuilder.GetUpdateCommand().CommandText);
+
+                adapter.Update(ds, "TableOne"); // if you set the tablename then you will have to put it right behind.
+                ds.AcceptChanges();
+
             }
         }
     }

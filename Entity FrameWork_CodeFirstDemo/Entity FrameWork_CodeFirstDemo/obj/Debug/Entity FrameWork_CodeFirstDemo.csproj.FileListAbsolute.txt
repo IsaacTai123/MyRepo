@@ -1,0 +1,14 @@
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\bin\Debug\Entity FrameWork_CodeFirstDemo.exe.config
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\bin\Debug\Entity FrameWork_CodeFirstDemo.exe
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\bin\Debug\Entity FrameWork_CodeFirstDemo.pdb
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\bin\Debug\EntityFramework.xml
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\obj\Debug\Entity FrameWork_CodeFirstDemo.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\obj\Debug\Entity FrameWork_CodeFirstDemo.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\obj\Debug\Entity FrameWork_CodeFirstDemo.csproj.CopyComplete
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\obj\Debug\Entity FrameWork_CodeFirstDemo.exe
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\obj\Debug\Entity FrameWork_CodeFirstDemo.pdb
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\obj\Debug\Entity_FrameWork_CodeFirstDemo.Migrations.CreatePost.resources
+C:\Users\user\source\repos\Entity FrameWork_CodeFirstDemo\Entity FrameWork_CodeFirstDemo\obj\Debug\Entity FrameWork_CodeFirstDemo.csproj.GenerateResource.cache

@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\bin\Debug\Entity Framwork_FromMosh.exe.config
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\bin\Debug\Entity Framwork_FromMosh.exe
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\bin\Debug\Entity Framwork_FromMosh.pdb
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\bin\Debug\EntityFramework.xml
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\obj\Debug\Entity Framwork_FromMosh.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\obj\Debug\Entity Framwork_FromMosh.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\obj\Debug\Entity Framwork_FromMosh.csproj.CopyComplete
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\obj\Debug\Entity Framwork_FromMosh.exe
+C:\Users\user\source\repos\Entity Framwork_FromMosh\Entity Framwork_FromMosh\obj\Debug\Entity Framwork_FromMosh.pdb
