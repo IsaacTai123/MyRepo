@@ -1,0 +1,13 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "redirectPreserve";
+}
+
+<h1>Redirect Preserve method</h1>
+<form asp-controller="redirect" asp-action="Index" method="post">
+    <input type="hidden" name="guid" value="@Guid.NewGuid()"/>
+    <button type="submit">Submit</button>
+</form>
+1

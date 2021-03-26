@@ -8,7 +8,7 @@ namespace HashThePwd
     {
         static void Main(string[] args)
         {
-            string password = "password";
+            string password = "EnterYourPassword";
             Console.WriteLine(password);
 
             //Hashing a password in ASP.NET Core

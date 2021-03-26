@@ -10,3 +10,4 @@ C:\Users\user\source\repos\Enum\Enum\obj\Debug\netcoreapp3.1\Enums.csproj.CoreCo
 C:\Users\user\source\repos\Enum\Enum\obj\Debug\netcoreapp3.1\Enums.dll
 C:\Users\user\source\repos\Enum\Enum\obj\Debug\netcoreapp3.1\Enums.pdb
 C:\Users\user\source\repos\Enum\Enum\obj\Debug\netcoreapp3.1\Enums.genruntimeconfig.cache
+C:\Users\user\source\repos\Enum\Enum\obj\Debug\netcoreapp3.1\Enums.csprojAssemblyReference.cache

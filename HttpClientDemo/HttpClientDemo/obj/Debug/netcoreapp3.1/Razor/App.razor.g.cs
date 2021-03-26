@@ -102,8 +102,9 @@ using System.Net.Http.Json;
 #nullable disable
             ));
             __builder.AddAttribute(2, "Found", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.RouteData>)((routeData) => (__builder2) => {
-                __builder2.OpenComponent<Microsoft.AspNetCore.Components.RouteView>(3);
-                __builder2.AddAttribute(4, "RouteData", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.RouteData>(
+                __builder2.AddMarkupContent(3, "\r\n        ");
+                __builder2.OpenComponent<Microsoft.AspNetCore.Components.RouteView>(4);
+                __builder2.AddAttribute(5, "RouteData", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.RouteData>(
 #nullable restore
 #line 4 "C:\Users\user\source\repos\HttpClientDemo\HttpClientDemo\App.razor"
                                routeData
@@ -112,7 +113,7 @@ using System.Net.Http.Json;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(5, "DefaultLayout", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Type>(
+                __builder2.AddAttribute(6, "DefaultLayout", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Type>(
 #nullable restore
 #line 4 "C:\Users\user\source\repos\HttpClientDemo\HttpClientDemo\App.razor"
                                                           typeof(MainLayout)
@@ -122,11 +123,13 @@ using System.Net.Http.Json;
 #nullable disable
                 ));
                 __builder2.CloseComponent();
+                __builder2.AddMarkupContent(7, "\r\n    ");
             }
             ));
-            __builder.AddAttribute(6, "NotFound", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
-                __builder2.OpenComponent<Microsoft.AspNetCore.Components.LayoutView>(7);
-                __builder2.AddAttribute(8, "Layout", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Type>(
+            __builder.AddAttribute(8, "NotFound", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
+                __builder2.AddMarkupContent(9, "\r\n        ");
+                __builder2.OpenComponent<Microsoft.AspNetCore.Components.LayoutView>(10);
+                __builder2.AddAttribute(11, "Layout", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Type>(
 #nullable restore
 #line 7 "C:\Users\user\source\repos\HttpClientDemo\HttpClientDemo\App.razor"
                              typeof(MainLayout)
@@ -135,11 +138,13 @@ using System.Net.Http.Json;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(9, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.AddMarkupContent(10, "<p>Sorry, there\'s nothing at this address.</p>");
+                __builder2.AddAttribute(12, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(13, "\r\n            ");
+                    __builder3.AddMarkupContent(14, "<p>Sorry, there\'s nothing at this address.</p>\r\n        ");
                 }
                 ));
                 __builder2.CloseComponent();
+                __builder2.AddMarkupContent(15, "\r\n    ");
             }
             ));
             __builder.CloseComponent();

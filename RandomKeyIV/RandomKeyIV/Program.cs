@@ -54,11 +54,11 @@ namespace RandomKeyIV
 
             // -----------------------------------------------------------------------------------------------------------
 
-            // 使用 Rfc2898DeriveBytes 類別，產生指定長度的 Key 和 IV :
-            // 定義 password、salt
+            //// 使用 Rfc2898DeriveBytes 類別，產生指定長度的 Key 和 IV :
+            //// 定義 password、salt
             //string password = "thisispassword";
-            ////byte[] salt = Encoding.UTF8.GetBytes("saltsaltsaltsaltsa"); //長度必須 "least eight bytes" 不然會得到 "Salt is not at least eight bytes" error
-            //byte[] salt = Encoding.UTF8.GetBytes("saltsalt");
+            //byte[] salt = Encoding.UTF8.GetBytes("saltsaltsaltsaltsa"); //長度必須 "least eight bytes" 不然會得到 "Salt is not at least eight bytes" error
+            ////byte[] salt = Encoding.UTF8.GetBytes("saltsalt");
 
             //// 依據 password、salt ，建立 rfc2898derivebytes 物件
             //Rfc2898DeriveBytes rfc2898 = new Rfc2898DeriveBytes(password, salt);

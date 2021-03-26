@@ -27,6 +27,8 @@ using System.Net.Http;
 using Microsoft.AspNetCore.Http;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Web;
+using System.Net;
 
 namespace blackBoard
 {
@@ -290,18 +292,21 @@ namespace blackBoard
             //}
 
 
-            // typeof Operator
-            void PrintType<T>() => Console.WriteLine(typeof(T));
+            //// typeof Operator
+            //void PrintType<T>() => Console.WriteLine(typeof(T));
 
-            Console.WriteLine(typeof(List<string>));
-            PrintType<int>();
-            PrintType<System.Int32>();
-            PrintType<Dictionary<int, char>>();
-            // Output:
-            // System.Collections.Generic.List`1[System.String]
-            // System.Int32
-            // System.Int32
-            // System.Collections.Generic.Dictionary`2[System.Int32,System.Char]
+            //Console.WriteLine(typeof(List<string>));
+            //PrintType<int>();
+            //PrintType<System.Int32>();
+            //PrintType<Dictionary<int, char>>();
+            //// Output:
+            //// System.Collections.Generic.List`1[System.String]
+            //// System.Int32
+            //// System.Int32
+            //// System.Collections.Generic.Dictionary`2[System.Int32,System.Char]
+            ///
+
+            
         }
 
         class Demo { };
