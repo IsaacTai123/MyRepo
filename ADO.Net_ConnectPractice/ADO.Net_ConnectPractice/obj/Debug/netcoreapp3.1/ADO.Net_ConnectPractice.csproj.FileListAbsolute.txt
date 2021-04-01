@@ -39,3 +39,4 @@ C:\Users\user\source\repos\ADO.Net_ConnectPractice\ADO.Net_ConnectPractice\bin\D
 C:\Users\user\source\repos\ADO.Net_ConnectPractice\ADO.Net_ConnectPractice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\user\source\repos\ADO.Net_ConnectPractice\ADO.Net_ConnectPractice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\user\source\repos\ADO.Net_ConnectPractice\ADO.Net_ConnectPractice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\user\source\repos\ADO.Net_ConnectPractice\ADO.Net_ConnectPractice\bin\Debug\netcoreapp3.1\Dapper.dll

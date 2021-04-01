@@ -9,7 +9,7 @@ namespace DELEGATES_OPERATOR
     {
         // https://www.youtube.com/watch?v=3ZfwqWl-YI0 vidio for this tutorial
 
-
+        // A delegate is a type save funtion pointer, meaning the signature of the method to which the delegate points to must match with the signature of the delegate itself. that's why delegates are called type save function pointers
 
         public delegate void TestDelegate();
         public delegate bool TestBoolDelegate(int i);
@@ -53,6 +53,12 @@ namespace DELEGATES_OPERATOR
 
             testFunc = () => false;
             testIntBoolFunc = (int i) => { return i < 5; };
+            // or do thistestIntBoolFunc = new Func<int, bool>(test);
+        }
+
+        private bool test(int temp)
+        {
+            return false;
         }
 
         private void MyTestDelegateFunction()

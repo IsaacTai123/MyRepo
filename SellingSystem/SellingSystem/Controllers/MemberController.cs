@@ -80,7 +80,7 @@ namespace SellingSystem.Controllers
         //    return new MemberServicers().CheckTheMember("test", 123);
         //}
 
-        [HttpGet]
+        //[HttpGet("{uniqueId}")]
         [Route("{uniqueId}")]
         public string LaunchTransaction(string uniqueId, [FromQuery]string Data) // the data is transactionData but Encrypted
         {

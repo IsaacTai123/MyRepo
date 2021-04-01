@@ -7,7 +7,7 @@
 
 <h1>Redirect Preserve method</h1>
 <form asp-controller="redirect" asp-action="Index" method="post">
-    <input type="hidden" name="guid" value="@Guid.NewGuid()"/>
+    @*<input type="hidden" name="guid" value="@Guid.NewGuid()"/>*@
+    <input type="text" name="message" value="messageValue"/>
     <button type="submit">Submit</button>
 </form>
-1

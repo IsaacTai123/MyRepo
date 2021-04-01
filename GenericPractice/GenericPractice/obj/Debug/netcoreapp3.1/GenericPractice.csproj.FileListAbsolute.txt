@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\GenericPractice\GenericPractice\bin\Debug\netcoreapp3.1\GenericPractice.exe
+C:\Users\user\source\repos\GenericPractice\GenericPractice\bin\Debug\netcoreapp3.1\GenericPractice.deps.json
+C:\Users\user\source\repos\GenericPractice\GenericPractice\bin\Debug\netcoreapp3.1\GenericPractice.runtimeconfig.json
+C:\Users\user\source\repos\GenericPractice\GenericPractice\bin\Debug\netcoreapp3.1\GenericPractice.runtimeconfig.dev.json
+C:\Users\user\source\repos\GenericPractice\GenericPractice\bin\Debug\netcoreapp3.1\GenericPractice.dll
+C:\Users\user\source\repos\GenericPractice\GenericPractice\bin\Debug\netcoreapp3.1\GenericPractice.pdb
+C:\Users\user\source\repos\GenericPractice\GenericPractice\obj\Debug\netcoreapp3.1\GenericPractice.csprojAssemblyReference.cache
+C:\Users\user\source\repos\GenericPractice\GenericPractice\obj\Debug\netcoreapp3.1\GenericPractice.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\GenericPractice\GenericPractice\obj\Debug\netcoreapp3.1\GenericPractice.AssemblyInfo.cs
+C:\Users\user\source\repos\GenericPractice\GenericPractice\obj\Debug\netcoreapp3.1\GenericPractice.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\GenericPractice\GenericPractice\obj\Debug\netcoreapp3.1\GenericPractice.dll
+C:\Users\user\source\repos\GenericPractice\GenericPractice\obj\Debug\netcoreapp3.1\GenericPractice.pdb
+C:\Users\user\source\repos\GenericPractice\GenericPractice\obj\Debug\netcoreapp3.1\GenericPractice.genruntimeconfig.cache

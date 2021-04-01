@@ -306,7 +306,28 @@ namespace blackBoard
             //// System.Collections.Generic.Dictionary`2[System.Int32,System.Char]
             ///
 
-            
+
+            //// 把class 轉換成json 在把 json 轉成dicionary的 key, value
+            //model parm = new model() { name = "jason", address = "street 6", currency = "YSL", money = "1000" };
+
+            //string json = JsonConvert.SerializeObject(parm);
+            //Dictionary<string, string> dic = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+            //foreach (var item in dic)
+            //{
+            //    Console.WriteLine("{0},  {1}", item.Key, item.Value);
+            //}
+
+
+
+        }
+
+
+        public class model
+        {
+            public string name { get; set; }
+            public string address { get; set; }
+            public string money { get; set; }
+            public string currency { get; set; }
         }
 
         class Demo { };

@@ -1,7 +1,13 @@
-﻿using System;
+﻿using Dapper;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Threading;
 
 namespace ADO.Net_ConnectPractice
 {
@@ -26,7 +32,8 @@ namespace ADO.Net_ConnectPractice
             //6 關閉連線
 
             //建立連線 -- 收先需要媒介 (連線字串)
-            string connectionString = "Server = .\\SQLEXPRESS01; Database = SQL Tutorial; Trusted_Connection=True";
+            string connectionString = "Server = .\\SQLEXPRESS01; Database =Tournaments; Trusted_Connection=True;";
+            string MySQLconnectionString = "Data Source=127.0.0.1;Database=sql_store;User Id=root;Password=abc;port=3306;Pooling=false;";
 
 
             //有了連線字串就可以建立物件
@@ -61,6 +68,7 @@ namespace ADO.Net_ConnectPractice
             //1 AddWithVlue
             //2 Add
             //3 AddRange
+
             //using (SqlConnection sqlconnection = new SqlConnection(connectionString))
             //{
             //    sqlconnection.Open();
@@ -77,7 +85,7 @@ namespace ADO.Net_ConnectPractice
 
 
 
-            // **** 資料讀取 使用DataReader --> 利用查詢語句得到的資料資訊需要通過資料讀取器進行操作 ****
+            //// **** 資料讀取 使用DataReader --> 利用查詢語句得到的資料資訊需要通過資料讀取器進行操作 ****
             //using (SqlConnection sqlconnection = new SqlConnection(connectionString))
             //{
             //    sqlconnection.Open();
@@ -345,62 +353,244 @@ namespace ADO.Net_ConnectPractice
             //}
 
 
-            // 自己練習一次
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            //// 自己練習一次
+            //using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            //{
+            //    string sql = "Select * from dbo.Testperson";
+            //    DataSet ds = new DataSet();
+
+            //    sqlConnection.Open();
+
+            //    SqlDataAdapter adapter = new SqlDataAdapter(sql, sqlConnection);
+            //    adapter.Fill(ds);
+
+            //    ds.Tables[0].TableName = "TableOne";
+
+            //    foreach (DataRow dataRow in ds.Tables["TableOne"].Rows)
+            //    {
+            //        Console.WriteLine($"ID => {dataRow["id"]}, {dataRow["FirstName"]}, {dataRow["LastName"]}");
+            //    }
+
+            //    //新增一筆資料
+            //    DataRow newRow = ds.Tables["TableOne"].NewRow();
+            //    newRow["FirstName"] = "Harry";
+            //    newRow["LastName"] = "Potter";
+            //    newRow["EmailAddress"] = "ddd@gmail.com";
+            //    ds.Tables["TableOne"].Rows.Add(newRow);
+
+            //    //移除一筆資料
+            //    //ds.Tables["TableOne"].Rows.Remove(ds.Tables["TableOne"].Rows[1]);
+            //    ds.Tables["TableOne"].Rows[1].Delete(); // 要移除後端Database裏面的資料 必須用Delete, 使用Remove 只會移除DataTable 裡面的資料而已
+
+
+            //    //for (int i = ds.Tables["TableOne"].Rows.Count - 1; i >= 0; i--)
+            //    //{
+            //    //    DataRow dr = ds.Tables["TableOne"].Rows[i];
+            //    //    if (dr["FirstName"].ToString() == "firstname")
+            //    //    {
+            //    //        dr.Delete();
+            //    //    }
+            //    //}
+
+
+            //    //修改一筆資料
+            //    DataRow[] rows = ds.Tables["TableOne"].Select("id=5");
+            //    if (rows.Length > 0)
+            //    {
+            //        rows[0]["FirstName"] = "johon";
+            //    }
+
+
+
+            //    SqlCommandBuilder cmdBuilder = new SqlCommandBuilder(adapter);
+            //    Console.WriteLine("生成的Update語句：{0}", cmdBuilder.GetUpdateCommand().CommandText);
+
+            //    adapter.Update(ds, "TableOne"); // if you set the tablename then you will have to put it right behind.
+            //    ds.AcceptChanges();
+
+
+            //// **** Connect to Mysql *****
+            //using (MySqlConnection conn = new MySqlConnection(MySQLconnectionString))
+            //{
+            //    conn.Open();
+
+            //    MySqlCommand command = new MySqlCommand(string.Empty, conn);
+            //    command.CommandType = CommandType.StoredProcedure;
+            //    command.CommandText = "sql_store.customers_Get";
+            //    //command.Parameters.Add("?id", MySqlDbType.Int32).Value = 5;
+            //    command.Parameters.AddWithValue("id", "3");
+
+            //    MySqlDataReader reader = command.ExecuteReader();
+
+            //    if (reader.HasRows)
+            //    {
+            //        reader.Read();
+            //        Console.WriteLine("firatname => " + reader.GetString(0));
+            //        Console.WriteLine("lastname => " + reader.GetString(1));
+            //        Console.WriteLine("phone => " + reader.GetString(2));
+
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("No rows founds");
+            //    }
+            //    reader.Close();
+
+            //}
+
+
+
+
+            //// *****　測試使用 Dispose method 是不是可以成功把connection 釋放
+            //// >>>>> Mysql version
+            //MySqlConnection _sqlcon = new MySqlConnection(MySQLconnectionString);
+            //_sqlcon.Open();
+            ////_sqlcon.Close();
+
+            //Console.WriteLine(string.Format("Close-{0}.", _sqlcon.ConnectionString));
+
+            //_sqlcon.Open();
+            ////_sqlcon.Dispose();
+            ////_sqlcon.ConnectionString = null;
+
+            ////MySqlConnection.ClearPool(_sqlcon);
+
+            //Console.WriteLine(string.Format("Dispose-{0}.", string.IsNullOrEmpty(_sqlcon.ConnectionString) == true ? "IsNullOrEmpty" : _sqlcon.ConnectionString));
+            //Console.ReadLine();
+
+            //// >>>>>> SQL Version
+            //SqlConnection _sqlcon = new SqlConnection(connectionString);
+            //_sqlcon.Open();
+            //_sqlcon.Close();
+
+            //Console.WriteLine(string.Format("Close-{0}.", _sqlcon.ConnectionString));
+
+            //_sqlcon.Open();
+            //_sqlcon.Dispose();
+
+
+            //Console.WriteLine(string.Format("Dispose-{0}.", string.IsNullOrEmpty(_sqlcon.ConnectionString) == true ? "IsNullOrEmpty" : _sqlcon.ConnectionString));
+            //Console.ReadLine();
+
+
+
+
+
+            // *****　測試 使用dapper 能不能成功地釋放 
+            // >>>>> using Mysql connection :
+            //MySqlConnection con = new MySqlConnection(MySQLconnectionString);
+            //DynamicParameters p = new DynamicParameters();
+            //p.Add("id", 6);
+
+            //con.Dispose();
+            //var respone = con.Query<model>("sql_store.customers_Get", p, commandType: CommandType.StoredProcedure);
+
+            //Console.WriteLine("fjso");
+
+            // >>>>>> Using Sql connection :
+            //SqlConnection con = new SqlConnection(connectionString);
+            //DynamicParameters p = new DynamicParameters();
+            //p.Add("@Lastname", "jjjjj");
+
+            //con.Dispose();
+            //var respone = con.Query<model2>("dbo.spPeople_GetAll", commandType: CommandType.StoredProcedure);
+
+            //Console.WriteLine("fjso");
+
+
+
+
+            // ***** 使用stop watch 來測試每次建立連線所需的時間
+            string localdbconnection = @"Data Source=(localdb)\LocalDBDemo;Integrated Security=true;
+            AttachDbFilename=C:\Users\user\localdb.mdf;Min Pool Size=3;Max Pool Size=5";
+
+            // >>>>> 成功的CODE
+            int count = 0;
+            bool judgment = true;
+
+            while (judgment)
             {
-                string sql = "Select * from dbo.Testperson";
-                DataSet ds = new DataSet();
+                Stopwatch sw = new Stopwatch();
+                sw.Start();
 
-                sqlConnection.Open();
+                SqlConnection sqlconnection = new SqlConnection(connectionString);
+                //sqlconnection.ConnectionString = localdbconnection;
 
-                SqlDataAdapter adapter = new SqlDataAdapter(sql, sqlConnection);
-                adapter.Fill(ds);
+                // open the connection
+                sqlconnection.Open();
 
-                ds.Tables[0].TableName = "TableOne";
+                //sqlconnection.Close();
+                //sqlconnection.Dispose();
+                //sqlconnection = null;
 
-                foreach (DataRow dataRow in ds.Tables["TableOne"].Rows)
-                {
-                    Console.WriteLine($"ID => {dataRow["id"]}, {dataRow["FirstName"]}, {dataRow["LastName"]}");
-                }
+                sw.Stop();
+                Console.WriteLine($"connect 2 take {sw.ElapsedMilliseconds} milloseconds");
 
-                //新增一筆資料
-                DataRow newRow = ds.Tables["TableOne"].NewRow();
-                newRow["FirstName"] = "Harry";
-                newRow["LastName"] = "Potter";
-                newRow["EmailAddress"] = "ddd@gmail.com";
-                ds.Tables["TableOne"].Rows.Add(newRow);
-
-                //移除一筆資料
-                //ds.Tables["TableOne"].Rows.Remove(ds.Tables["TableOne"].Rows[1]);
-                ds.Tables["TableOne"].Rows[1].Delete(); // 要移除後端Database裏面的資料 必須用Delete, 使用Remove 只會移除DataTable 裡面的資料而已
-
-
-                //for (int i = ds.Tables["TableOne"].Rows.Count - 1; i >= 0; i--)
-                //{
-                //    DataRow dr = ds.Tables["TableOne"].Rows[i];
-                //    if (dr["FirstName"].ToString() == "firstname")
-                //    {
-                //        dr.Delete();
-                //    }
-                //}
-                
-
-                //修改一筆資料
-                DataRow[] rows = ds.Tables["TableOne"].Select("id=5");
-                if (rows.Length > 0)
-                {
-                    rows[0]["FirstName"] = "johon";
-                }
-
-
-
-                SqlCommandBuilder cmdBuilder = new SqlCommandBuilder(adapter);
-                Console.WriteLine("生成的Update語句：{0}", cmdBuilder.GetUpdateCommand().CommandText);
-
-                adapter.Update(ds, "TableOne"); // if you set the tablename then you will have to put it right behind.
-                ds.AcceptChanges();
-
+                count += 1;
+                judgment = (count > 20) ? false : true;
             }
+
+            Console.ReadKey();
+
+            Thread thread = new Thread() 
+
+            //// >>>>> 失敗的CODE
+            //Enumerable.Range(1, 10).Select(x => Task.Run(() => 
+            //{
+            //    Stopwatch sw = new Stopwatch();
+            //    sw.Start();
+
+            //    SqlConnection sqlconnection = new SqlConnection(localdbconnection);
+            //    //sqlconnection.ConnectionString = localdbconnection;
+
+            //    // open the connection
+            //    sqlconnection.Open();
+
+            //    //sqlconnection.Close();
+            //    //sqlconnection.Dispose();
+            //    //sqlconnection = null;
+
+            //    sw.Stop();
+            //    Console.WriteLine($"connect {x} take {sw.ElapsedMilliseconds} milloseconds");
+
+            //})).ToList();
+
+            //Console.ReadKey();
+
         }
+    }
+
+    public class DoTheDispose : IDisposable
+    {
+        bool disposed = false;
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposed) return;
+            if (disposing)
+            {
+                // ??? how to dispose the connection using this Dispose Pattern
+            }
+            
+        }
+    }
+
+    public class model
+    {
+        public string First_name { get; set; }
+        public string Last_name { get; set; }
+        public string phone { get; set; }
+    }
+
+    public class model2
+    {
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
+        public string EmailAddress { get; set; }
     }
 }

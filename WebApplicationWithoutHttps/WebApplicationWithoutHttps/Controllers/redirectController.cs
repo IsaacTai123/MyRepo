@@ -15,10 +15,10 @@ namespace WebApplicationWithoutHttps.Controllers
 
 
             // **** RedirectPermanent() method *****
-            return RedirectPermanent("~/http/Index");
+            //return RedirectPermanent("~/http/Index");
 
             // ***** RedirectPreserveMethod() method *****
-            //return RedirectPreserveMethod("~/redirect/Privacy");
+            return RedirectPreserveMethod("~/redirect/Privacy");
 
             //Response.Redirect("http://www.google.com");
             
