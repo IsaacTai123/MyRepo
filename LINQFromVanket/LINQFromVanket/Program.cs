@@ -104,20 +104,163 @@ namespace LINQFromVanket
 
             //-------------------------------------------------------------------------------------------------------------------
 
-            IEnumerable<Student> students = Student.GetAllStudents();
-            Console.WriteLine("Before calling Reverse method");
-            foreach (Student s in students)
+            //IEnumerable<Student> students = Student.GetAllStudents();
+            //Console.WriteLine("Before calling Reverse method");
+            //foreach (Student s in students)
+            //{
+            //    Console.WriteLine(s.StudentID + "\t" + s.Name + "\t" + s.TotalMarks);
+            //}
+
+            //Console.WriteLine();
+            //IEnumerable<Student> result = students.Reverse();
+            //Console.WriteLine("Before calling Reverse method");
+            //foreach (Student s in result)
+            //{
+            //    Console.WriteLine(s.StudentID + "\t" + s.Name + "\t" + s.TotalMarks);
+            //}
+
+
+            //-------------------------------------------------------------------------------------------------------------------
+            //// **** Select & Selectmany
+            //IEnumerable<List<String>> result = StudentTwo.GetAllStudetns().Select( x => x.Subjects );
+            //foreach (List<string> stringList in result)
+            //{
+            //    foreach (string str in stringList)
+            //    {
+            //        Console.WriteLine(str);
+            //    }
+            //}
+
+            //IEnumerable<String> resultTwo = StudentTwo.GetAllStudetns().SelectMany(x => x.Subjects);
+            //foreach (string str in resultTwo)
+            //{
+            //    Console.WriteLine(str);
+            //}
+
+            //-------------------------------------------------------------------------------------------------------------------
+            //// ***** Groupby
+            //var employeeGroups = Employee.GetAllEmployees().GroupBy(x => x.Department);
+
+            //foreach (var group in employeeGroups)
+            //{
+            //    Console.WriteLine("{0}, {1} ", group.Key, group.Count());
+            //    Console.WriteLine("-------------------");
+
+            //    foreach (var employee in group)
+            //    {
+            //        Console.WriteLine(employee.Name + "\t" + employee.Department);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //var employeeGroups = Employee.GetAllEmployees()
+            //                                      .GroupBy(x => x.Department)
+            //                                      .OrderBy(g => g.Key)
+            //                                      .Select(g => new
+            //                                      {
+            //                                          Key = g.Key,
+            //                                          Employee = g.OrderBy(x => x.Name)
+            //                                      });
+
+            //foreach (var group in employeeGroups)
+            //{
+            //    Console.WriteLine("{0}, {1} ", group.Key, group.Employee.Count());
+            //    Console.WriteLine("-------------------");
+
+            //    foreach (var employee in group.Employee)
+            //    {
+            //        Console.WriteLine(employee.Name + "\t" + employee.Department);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //-------------------------------------------------------------------------------------------------------------------
+            //// **** Groupby Multiple keys
+            var employeeGroups = from p in Employee.GetAllEmployees()
+                                                     group p by new { p.Department, p.Gender } into eGroup
+                                                     orderby eGroup.Key.Department, eGroup.Key.Gender
+                                                     select new
+                                                     {
+                                                         Department = eGroup.Key.Department,
+                                                         Gender = eGroup.Key.Gender,
+                                                         Employee = eGroup.OrderBy(x => x.Name)
+                                                     };
+
+            // or you can use the object you created
+            var employeeGroupss = from p in Employee.GetAllEmployees()
+                                                     group p by new { p.Department, p.Gender } into eGroup
+                                                     orderby eGroup.Key.Department, eGroup.Key.Gender
+                                                     select new model
+                                                     {
+                                                         Name = eGroup.Key.Department,
+                                                         Gender = eGroup.Key.Gender,
+                                                         emp = eGroup.OrderBy(x => x.Name)
+                                                     };
+
+
+            //var employeeGroups = Employee.GetAllEmployees()
+            //                                            .GroupBy(x => new { x.Department, x.Gender })
+            //                                            .OrderBy(g => g.Key.Department).ThenBy(g => g.Key.Gender)
+            //                                            .Select(t => new
+            //                                            {
+            //                                                Department = t.Key.Department,
+            //                                                Gender = t.Key.Gender,
+            //                                                Employee = t.OrderBy(e => e.Name)
+            //                                            });
+
+            foreach (var group in employeeGroups)
             {
-                Console.WriteLine(s.StudentID + "\t" + s.Name + "\t" + s.TotalMarks);
+                Console.WriteLine("{0} department  {1}  employees Count = {2}", group.Department, group.Gender, group.Employee.Count());
+                Console.WriteLine("------------------------------------------------------");
+                foreach (var employee in group.Employee)
+                {
+                    Console.WriteLine(employee.Name + "\t" + employee.Gender + "\t" + employee.Department);
+                }
+                Console.WriteLine();
             }
+
+
+            //-------------------------------------------------------------------------------------------------------------------
+            // ***** Anonymous methods in c#
+            List<EmployeeTwo> listEmployees = new List<EmployeeTwo>()
+            {
+                new EmployeeTwo{ ID = 101, Name = "Mark"},
+                new EmployeeTwo{ ID = 102, Name = "John"},
+                new EmployeeTwo{ ID = 103, Name = "Mary"},
+            };
+
+            // * Standard way ~~
+            // Step2
+            //Predicate<EmployeeTwo> employeePredicate = new Predicate<EmployeeTwo>(FindEmployee);
+
+            ////EmployeeTwo employee = listEmployees.Find(employeePredicate); // first way
+            //EmployeeTwo employee = listEmployees.Find(emp => FindEmployee(emp)); // second way
+
+            //Console.WriteLine("Id = {0} , Name = {1}", employee.ID, employee.Name);
+
+            // * using anonymouse method
+            //Predicate<EmployeeTwo> employeePredicate = delegate (EmployeeTwo emp) { return emp.ID == 102; };
             
-            Console.WriteLine();
-            IEnumerable<Student> result = students.Reverse();
-            Console.WriteLine("Before calling Reverse method");
-            foreach (Student s in result)
-            {
-                Console.WriteLine(s.StudentID + "\t" + s.Name + "\t" + s.TotalMarks);
-            }
+            //EmployeeTwo employee = listEmployees.Find(employeePredicate);
+            //Console.WriteLine("Id = {0} , Name = {1}", employee.ID, employee.Name);
+
+            // * using anonymouse method and Lamdba expressions
+            //Predicate<EmployeeTwo> employeePredicate = (EmployeeTwo emp) => { return emp.ID == 102; };
+            //EmployeeTwo employee = listEmployees.Find(employeePredicate);
+            //Console.WriteLine("Id = {0} , Name = {1}", employee.ID, employee.Name);
+        }
+
+        // Setp1
+        public static bool FindEmployee(EmployeeTwo emp)
+        {
+            return emp.ID == 102;
+        }
+
+        public class model
+        {
+            public string Name { get; set; }
+            public string Gender { get; set; }
+            public IEnumerable<Employee> emp { get; set; }
         }
     }
 }

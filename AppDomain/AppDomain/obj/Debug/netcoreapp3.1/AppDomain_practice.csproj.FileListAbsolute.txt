@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\AppDomain\AppDomain\bin\Debug\netcoreapp3.1\AppDomain_practice.exe
+C:\Users\user\source\repos\AppDomain\AppDomain\bin\Debug\netcoreapp3.1\AppDomain_practice.deps.json
+C:\Users\user\source\repos\AppDomain\AppDomain\bin\Debug\netcoreapp3.1\AppDomain_practice.runtimeconfig.json
+C:\Users\user\source\repos\AppDomain\AppDomain\bin\Debug\netcoreapp3.1\AppDomain_practice.runtimeconfig.dev.json
+C:\Users\user\source\repos\AppDomain\AppDomain\bin\Debug\netcoreapp3.1\AppDomain_practice.dll
+C:\Users\user\source\repos\AppDomain\AppDomain\bin\Debug\netcoreapp3.1\AppDomain_practice.pdb
+C:\Users\user\source\repos\AppDomain\AppDomain\obj\Debug\netcoreapp3.1\AppDomain_practice.csprojAssemblyReference.cache
+C:\Users\user\source\repos\AppDomain\AppDomain\obj\Debug\netcoreapp3.1\AppDomain_practice.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\AppDomain\AppDomain\obj\Debug\netcoreapp3.1\AppDomain_practice.AssemblyInfo.cs
+C:\Users\user\source\repos\AppDomain\AppDomain\obj\Debug\netcoreapp3.1\AppDomain_practice.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\AppDomain\AppDomain\obj\Debug\netcoreapp3.1\AppDomain_practice.dll
+C:\Users\user\source\repos\AppDomain\AppDomain\obj\Debug\netcoreapp3.1\AppDomain_practice.pdb
+C:\Users\user\source\repos\AppDomain\AppDomain\obj\Debug\netcoreapp3.1\AppDomain_practice.genruntimeconfig.cache

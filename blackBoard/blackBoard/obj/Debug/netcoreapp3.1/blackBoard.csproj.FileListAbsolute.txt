@@ -20,3 +20,4 @@ C:\Users\user\source\repos\blackBoard\blackBoard\bin\Debug\netcoreapp3.1\Microso
 C:\Users\user\source\repos\blackBoard\blackBoard\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\user\source\repos\blackBoard\blackBoard\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\user\source\repos\blackBoard\blackBoard\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\user\source\repos\blackBoard\blackBoard\bin\Debug\netcoreapp3.1\Slapper.dll

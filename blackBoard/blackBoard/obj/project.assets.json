@@ -104,6 +104,15 @@
           }
         }
       },
+      "Slapper.AutoMapper/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Slapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Slapper.dll": {}
+        }
+      },
       "System.Memory/4.5.1": {
         "type": "package",
         "compile": {
@@ -309,6 +318,19 @@
         "nlog.schema.nuspec"
       ]
     },
+    "Slapper.AutoMapper/2.0.2": {
+      "sha512": "m2QljWns/MexRWYbKxYrxQ+cyTr7pplNDnlAAPpXLR2zDSlKI1DpjPkrdti9772LOyY2nsD6jubXNYEU+F1D/w==",
+      "type": "package",
+      "path": "slapper.automapper/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.1/Slapper.dll",
+        "slapper.automapper.2.0.2.nupkg.sha512",
+        "slapper.automapper.nuspec"
+      ]
+    },
     "System.Memory/4.5.1": {
       "sha512": "sDJYJpGtTgx+23Ayu5euxG5mAXWdkDb4+b0rD0Cab0M1oQS9H0HXGPriKcqpXuiJDTV7fTp/d+fMDJmnr6sNvA==",
       "type": "package",
@@ -385,7 +407,8 @@
       "Microsoft.Extensions.DependencyInjection >= 5.0.1",
       "NLog >= 4.7.6",
       "NLog.Config >= 4.7.6",
-      "Newtonsoft.Json >= 12.0.3"
+      "Newtonsoft.Json >= 12.0.3",
+      "Slapper.AutoMapper >= 2.0.2"
     ]
   },
   "packageFolders": {
@@ -451,6 +474,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.3, )"
+          },
+          "Slapper.AutoMapper": {
+            "target": "Package",
+            "version": "[2.0.2, )"
           }
         },
         "imports": [

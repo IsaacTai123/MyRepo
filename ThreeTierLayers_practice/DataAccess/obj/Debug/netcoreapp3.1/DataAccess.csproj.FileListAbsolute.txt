@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.deps.json
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\bin\Debug\netcoreapp3.1\BusinessObject.dll
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\bin\Debug\netcoreapp3.1\BusinessObject.pdb
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csprojAssemblyReference.cache
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CopyComplete
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\user\source\repos\ThreeTierLayers_practice\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb

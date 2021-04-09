@@ -29,6 +29,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Net;
+using Slapper;
+using System.Dynamic;
 
 namespace blackBoard
 {
@@ -318,8 +320,136 @@ namespace blackBoard
             //}
 
 
+            // ****** LINQ  --> IEnumerable "Select" practice  *****
+            //int[] array = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            //int result = array.Where(x => x == 2).FirstOrDefault();
+            //Console.WriteLine(result) ;
+
+            //var select = array.Select(x => new
+            //{
+            //    number = x + "new string"
+            //});
+            //foreach (var item in select)
+            //{
+            //    Console.WriteLine(item.number);
+            //}
+            ////Console.WriteLine(response);
+
+
+            //int[] numbers = { 2, 55, 67, 82, 99, 13 };
+            //int[] result = numbers.Select((numbers, i) => numbers * i).ToArray();
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            //string[] fruits = { "apple", "banana", "mango", "orange", "passionfruit", "grape" };
+
+            //var query = fruits.Select((fruit, index) => new { index, str = fruit.Substring(0, index) });
+
+            //foreach (var obj in query)
+            //{
+            //    Console.WriteLine("{0}", obj);
+            //}
+
+
+            /*
+             This code produces the following output:
+
+             {index=0, str=}
+             {index=1, str=b}
+             {index=2, str=ma}
+             {index=3, str=ora}
+             {index=4, str=pass}
+             {index=5, str=grape}
+            */
+
+            //List<Trainer> trainers = new List<Trainer>()
+            //{
+            //    new Trainer(Teams.Valor, "Candela"),
+            //    new Trainer(Teams.Valor, "Bob"),
+            //    new Trainer(Teams.Mystic, "Blanche"),
+            //    new Trainer(Teams.Valor, "Alice"),
+            //    new Trainer(Teams.Instinct, "Spark"),
+            //    new Trainer(Teams.Mystic, "Tom"),
+            //    new Trainer(Teams.Dark, "Jeffrey")
+            //};
+
+            ////目標：以Team分類，將同隊的訓練師集合成List<Trainer>，
+            ////最終產出Dictionary<Teams, List<Trainer>>
+
+            ////以前的寫法，跑迴圈加邏輯比對
+            //var res1 = new Dictionary<Teams, List<Trainer>>();
+            //foreach (var t in trainers)
+            //{
+            //    if (!res1.ContainsKey(t.Team))
+            //        res1.Add(t.Team, new List<Trainer>());
+            //    res1[t.Team].Add(t);
+            //}
+
+            ////新寫法，使用LINQ GroupBy
+            //var res2 = trainers.GroupBy(x => x.Team).ToDictionary(o => o.Key, o => o.ToList());
+
+
+            // ****** Using Slapper Automapper
+            //var dic = new Dictionary<string, Object>()
+            //                            {
+            //                                { "Id", 1 },
+            //                                { "FirstName", "Clark" },
+            //                                { "LastName", "Kent" }
+            //                            };
+
+            //var person = AutoMapper.Map<Person>(dic);
+            //var personJson = JsonConvert.SerializeObject(person, Formatting.Indented);
+            //Console.WriteLine(personJson);
+
+            //// ***** Dynamic type
+            //dynamic test = new ExpandoObject();
+
+            //test.Name = "john";
+            //test.Age = 3;
+
+            //Console.WriteLine(test.Name);
+            //Console.WriteLine(test.Age);
+
+            // App domain which secured C:\
+            AppDomain securedDomain = AppDomain.CreateDomain("securedDomain");
+
+            Type thirdPartyApplication = 
 
         }
+
+
+
+
+        public class Person
+        {
+            public int Id;
+            public string FirstName;
+            public string LastName;
+        }
+
+        public enum Teams
+        {
+            Valor, 
+            Mystic,
+            Instinct,
+            Dark
+        }
+
+        public class Trainer
+        {
+            public Teams Team;
+            public string Name;
+            public Trainer(Teams team, string name)
+            {
+                Team = team; 
+                Name = name;
+            }
+        }
+
 
 
         public class model
