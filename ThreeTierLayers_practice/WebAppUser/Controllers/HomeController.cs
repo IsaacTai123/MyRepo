@@ -19,11 +19,15 @@ namespace WebAppUser.Controllers
         [HttpPost]
         public IActionResult Index(UserBO userBO)
         {
-            UserBL userBL = new UserBL();
-            CustomBO custom = userBL.AddUser(userBO);
+            if (ModelState.IsValid)
+            {
+                UserBL userBL = new UserBL();
+                CustomBO custom = userBL.AddUser(userBO);
+                return RedirectToAction("Index");
+            }
 
-
-            return View();
+            
+            return View(userBO);
         }
     }
 }

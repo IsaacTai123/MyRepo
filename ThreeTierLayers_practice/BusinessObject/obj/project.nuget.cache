@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Wb1mUY2zEOevM+MImNjf+PyUCU63mwPhBbBw/q0+BtA4nG/P8lkPQKmDnHaocfglGD2+aNA62AdIvepU1i3RuQ==",
+  "dgSpecHash": "FM4fbLUPpkqSuzHO2WqyVpQeM+rPw/AFphpa4RasOfFpKRbbaA1AZEC6oXZ2edSPrI3bHBnZ3ckH7BzahQpIIw==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\ThreeTierLayers_practice\\BusinessObject\\BusinessObject.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
