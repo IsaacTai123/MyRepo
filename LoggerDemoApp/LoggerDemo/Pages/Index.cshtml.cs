@@ -10,22 +10,22 @@ namespace LoggerDemo.Pages
 {
     public class IndexModel : PageModel
     {
-        //private readonly ILogger<IndexModel> _logger;
+        private readonly ILogger<IndexModel> _logger;
 
-        //// The standard way of capturing the category
-        //public IndexModel(ILogger<IndexModel> logger)
-        //{
-        //    _logger = logger;
-        //}
-
-
-        private readonly ILogger _logger;
-
-        // custome category name by doing this
-        public IndexModel(ILoggerFactory factory)
+        // The standard way of capturing the category
+        public IndexModel(ILogger<IndexModel> logger)
         {
-            _logger = factory.CreateLogger("CustomTheCategoryName");
+            _logger = logger;
         }
+
+
+        //private readonly ILogger _logger;
+
+        //// custom category name by doing this
+        //public IndexModel(ILoggerFactory factory)
+        //{
+        //    _logger = factory.CreateLogger("CustomTheCategoryName");
+        //}
 
         public void OnGet()
         {

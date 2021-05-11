@@ -27,7 +27,7 @@ namespace SellingSystem.Controllers
             _logger = factory.CreateLogger("BuildExceptionMessage");
         }
 
-        [HttpGet("api/")]
+        //[HttpGet("api/")]
         public string GetHttpContext()
         {
             //string sechema = Request.Scheme + "://" + Request.Path + Request.QueryString;

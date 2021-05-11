@@ -31,6 +31,9 @@ using System.Web;
 using System.Net;
 using Slapper;
 using System.Dynamic;
+using System.ComponentModel;
+using System.Reflection;
+using System.Collections.Specialized;
 
 namespace blackBoard
 {
@@ -366,16 +369,16 @@ namespace blackBoard
              {index=5, str=grape}
             */
 
-            //List<Trainer> trainers = new List<Trainer>()
-            //{
-            //    new Trainer(Teams.Valor, "Candela"),
-            //    new Trainer(Teams.Valor, "Bob"),
-            //    new Trainer(Teams.Mystic, "Blanche"),
-            //    new Trainer(Teams.Valor, "Alice"),
-            //    new Trainer(Teams.Instinct, "Spark"),
-            //    new Trainer(Teams.Mystic, "Tom"),
-            //    new Trainer(Teams.Dark, "Jeffrey")
-            //};
+            List<Trainer> trainers = new List<Trainer>()
+            {
+                new Trainer(Teams.Valor, "Candela"),
+                new Trainer(Teams.Valor, "Bob"),
+                new Trainer(Teams.Mystic, "Blanche"),
+                new Trainer(Teams.Valor, "Alice"),
+                new Trainer(Teams.Instinct, "Spark"),
+                new Trainer(Teams.Mystic, "Tom"),
+                new Trainer(Teams.Dark, "Jeffrey")
+            };
 
             ////目標：以Team分類，將同隊的訓練師集合成List<Trainer>，
             ////最終產出Dictionary<Teams, List<Trainer>>
@@ -414,14 +417,60 @@ namespace blackBoard
             //Console.WriteLine(test.Name);
             //Console.WriteLine(test.Age);
 
-            // App domain which secured C:\
-            AppDomain securedDomain = AppDomain.CreateDomain("securedDomain");
 
-            Type thirdPartyApplication = 
+            //test testing = new test();
+            //testing.secondMethod();
+
+            //Console.WriteLine(Days.Mon.GetDescription());
+            NameValueCollection list = new NameValueCollection()
+            {
+                { "name", "isaac" },
+                { "age", "23" }
+            };
+
+            Dictionary<string, int> sample = new Dictionary<string, int>()
+            {
+                { "age", 3 },
+                { "number", 223333 }
+            };
+
+            sample.TryGetValue("age", out int result);
+            Console.WriteLine(result);
+            Console.WriteLine();
+            Console.WriteLine(list[0]);
+
 
         }
 
+       public class test
+        {
+            public int id;
+            public string name;
 
+            public void printresult(string Name)
+            {
+                name = Name;
+                Console.WriteLine(name);
+            }
+
+            public void secondMethod()
+            {
+                printresult("people");
+            }
+        }
+        
+
+        public enum Days
+        {
+            [Description("Today is Monday")]
+            Mon,
+
+            [Description("Today is Tuesday")]
+            Tue,
+
+            [Description("Today is thirthday")]
+            Thirth
+        }
 
 
         public class Person
@@ -556,6 +605,18 @@ namespace blackBoard
             {
                 Console.WriteLine("static");
             }
+        }
+    }
+    public static class EnumExtension
+    {
+        public static string GetDescription(this Enum source)
+        {
+            FieldInfo fi = source.GetType().GetField(source.ToString());
+
+            DescriptionAttribute[] attributes = (DescriptionAttribute[])fi.GetCustomAttributes(typeof(DescriptionAttribute), false);
+
+            if (attributes.Length > 0) return attributes[0].Description;
+            else return source.ToString();
         }
     }
 }

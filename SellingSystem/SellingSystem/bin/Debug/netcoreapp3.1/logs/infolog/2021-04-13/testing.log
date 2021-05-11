@@ -1,0 +1,28 @@
+2021-04-13 11:37:25.1614 |  | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:5001 - 
+2021-04-13 11:37:25.2061 |  | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5000 - 
+2021-04-13 11:37:25.2176 |  | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. - 
+2021-04-13 11:37:25.2176 |  | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development - 
+2021-04-13 11:37:25.2176 |  | INFO | Microsoft.Hosting.Lifetime | Content root path: C:\Users\user\source\repos\SellingSystem\SellingSystem - 
+2021-04-13 11:38:42.9861 |  | INFO | testrule | Entering the login controller. Login method - 
+2021-04-13 11:39:02.2644 |  | INFO | ClassLibrary.NLog.NLogHelper | Testing NLogHelper in ClassLibrary!! - 
+2021-04-13 11:39:24.2495 |  | INFO | SellingSystem.Controllers.MemberController | it is false - 
+2021-04-13 15:13:22.8847 |  | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:5001 - 
+2021-04-13 15:13:22.9260 |  | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5000 - 
+2021-04-13 15:13:22.9333 |  | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. - 
+2021-04-13 15:13:22.9562 |  | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development - 
+2021-04-13 15:13:22.9562 |  | INFO | Microsoft.Hosting.Lifetime | Content root path: C:\Users\user\source\repos\SellingSystem\SellingSystem - 
+2021-04-13 15:14:32.7559 |  | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:5001 - 
+2021-04-13 15:14:32.8311 |  | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5000 - 
+2021-04-13 15:14:32.8487 |  | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. - 
+2021-04-13 15:14:32.8619 |  | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development - 
+2021-04-13 15:14:32.8777 |  | INFO | Microsoft.Hosting.Lifetime | Content root path: C:\Users\user\source\repos\SellingSystem\SellingSystem - 
+2021-04-13 15:16:12.5076 |  | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:5001 - 
+2021-04-13 15:16:12.5730 |  | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5000 - 
+2021-04-13 15:16:12.5730 |  | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. - 
+2021-04-13 15:16:12.5730 |  | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development - 
+2021-04-13 15:16:12.5730 |  | INFO | Microsoft.Hosting.Lifetime | Content root path: C:\Users\user\source\repos\SellingSystem\SellingSystem - 
+2021-04-13 15:33:39.2082 |  | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:5001 - 
+2021-04-13 15:33:39.2427 |  | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5000 - 
+2021-04-13 15:33:39.2463 |  | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. - 
+2021-04-13 15:33:39.2463 |  | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development - 
+2021-04-13 15:33:39.2463 |  | INFO | Microsoft.Hosting.Lifetime | Content root path: C:\Users\user\source\repos\SellingSystem\SellingSystem - 

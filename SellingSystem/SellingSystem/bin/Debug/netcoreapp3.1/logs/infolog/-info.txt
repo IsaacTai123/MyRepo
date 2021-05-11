@@ -1,56 +1,20 @@
-2021-02-03 17:59:09.7491 Info Message Template Auto Format enabled
-2021-02-03 17:59:09.8358 Info Adding target FileTarget(Name=SellingSystem)
-2021-02-03 17:59:09.8358 Info Adding target FileTarget(Name=testTarget)
-2021-02-03 17:59:09.8864 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-02-03 18:00:11.1118 Info Message Template Auto Format enabled
-2021-02-03 18:00:11.2045 Info Adding target FileTarget(Name=SellingSystem)
-2021-02-03 18:00:11.2045 Info Adding target FileTarget(Name=testTarget)
-2021-02-03 18:00:11.2557 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-02-03 18:05:35.6709 Info Message Template Auto Format enabled
-2021-02-03 18:05:35.7471 Info Adding target FileTarget(Name=SellingSystem)
-2021-02-03 18:05:35.7471 Info Adding target FileTarget(Name=testTarget)
-2021-02-03 18:05:35.7993 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-02-03 18:09:11.5406 Info Message Template Auto Format enabled
-2021-02-03 18:09:11.6255 Info Adding target FileTarget(Name=SellingSystem)
-2021-02-03 18:09:11.6255 Info Adding target FileTarget(Name=testTarget)
-2021-02-03 18:09:11.6876 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-03-29 15:52:12.9005 Info Message Template Auto Format enabled
-2021-03-29 15:52:12.9908 Info Adding target FileTarget(Name=SellingSystem)
-2021-03-29 15:52:12.9908 Info Adding target FileTarget(Name=testTarget)
-2021-03-29 15:52:13.0401 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-03-29 15:55:14.5569 Info Message Template Auto Format enabled
-2021-03-29 15:55:14.6088 Info Adding target FileTarget(Name=SellingSystem)
-2021-03-29 15:55:14.6233 Info Adding target FileTarget(Name=testTarget)
-2021-03-29 15:55:14.6639 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-03-29 15:57:56.8294 Info Message Template Auto Format enabled
-2021-03-29 15:57:56.9030 Info Adding target FileTarget(Name=SellingSystem)
-2021-03-29 15:57:56.9030 Info Adding target FileTarget(Name=testTarget)
-2021-03-29 15:57:56.9464 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-03-29 15:59:16.1365 Info Message Template Auto Format enabled
-2021-03-29 15:59:16.2332 Info Adding target FileTarget(Name=SellingSystem)
-2021-03-29 15:59:16.2332 Info Adding target FileTarget(Name=testTarget)
-2021-03-29 15:59:16.2791 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-03-29 16:02:24.6727 Info Message Template Auto Format enabled
-2021-03-29 16:02:24.7474 Info Adding target FileTarget(Name=SellingSystem)
-2021-03-29 16:02:24.7485 Info Adding target FileTarget(Name=testTarget)
-2021-03-29 16:02:24.7940 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-03-29 16:09:55.5984 Info Message Template Auto Format enabled
-2021-03-29 16:09:55.6830 Info Adding target FileTarget(Name=SellingSystem)
-2021-03-29 16:09:55.6830 Info Adding target FileTarget(Name=testTarget)
-2021-03-29 16:09:55.7198 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-03-29 16:10:21.1099 Info Message Template Auto Format enabled
-2021-03-29 16:10:21.2034 Info Adding target FileTarget(Name=SellingSystem)
-2021-03-29 16:10:21.2034 Info Adding target FileTarget(Name=testTarget)
-2021-03-29 16:10:21.2796 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-03-29 16:54:01.1849 Info Message Template Auto Format enabled
-2021-03-29 16:54:01.2541 Info Adding target FileTarget(Name=SellingSystem)
-2021-03-29 16:54:01.2541 Info Adding target FileTarget(Name=testTarget)
-2021-03-29 16:54:01.2954 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-03-29 16:58:13.4370 Info Message Template Auto Format enabled
-2021-03-29 16:58:13.5209 Info Adding target FileTarget(Name=SellingSystem)
-2021-03-29 16:58:13.5209 Info Adding target FileTarget(Name=testTarget)
-2021-03-29 16:58:13.5659 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
-2021-03-29 17:12:06.8838 Info Message Template Auto Format enabled
-2021-03-29 17:12:06.9556 Info Adding target FileTarget(Name=SellingSystem)
-2021-03-29 17:12:06.9556 Info Adding target FileTarget(Name=testTarget)
-2021-03-29 17:12:06.9950 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
+2021-04-13 11:37:22.7117 Info Message Template Auto Format enabled
+2021-04-13 11:37:22.8236 Info Adding target FileTarget(Name=SellingSystem)
+2021-04-13 11:37:22.8236 Info Adding target FileTarget(Name=testTarget)
+2021-04-13 11:37:22.8974 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
+2021-04-13 15:13:20.2885 Info Message Template Auto Format enabled
+2021-04-13 15:13:20.4032 Info Adding target FileTarget(Name=SellingSystem)
+2021-04-13 15:13:20.4032 Info Adding target FileTarget(Name=testTarget)
+2021-04-13 15:13:20.4946 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
+2021-04-13 15:14:29.8272 Info Message Template Auto Format enabled
+2021-04-13 15:14:29.9135 Info Adding target FileTarget(Name=SellingSystem)
+2021-04-13 15:14:29.9190 Info Adding target FileTarget(Name=testTarget)
+2021-04-13 15:14:29.9605 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
+2021-04-13 15:16:09.9589 Info Message Template Auto Format enabled
+2021-04-13 15:16:10.0989 Info Adding target FileTarget(Name=SellingSystem)
+2021-04-13 15:16:10.0989 Info Adding target FileTarget(Name=testTarget)
+2021-04-13 15:16:10.1618 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config
+2021-04-13 15:33:36.7931 Info Message Template Auto Format enabled
+2021-04-13 15:33:36.8692 Info Adding target FileTarget(Name=SellingSystem)
+2021-04-13 15:33:36.8702 Info Adding target FileTarget(Name=testTarget)
+2021-04-13 15:33:36.9280 Info Validating config: TargetNames=testTarget, SellingSystem, ConfigItems=40, FilePath=C:\Users\user\source\repos\SellingSystem\SellingSystem\bin\Debug\netcoreapp3.1\nlog.config

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace SellingSystem.Controllers
 {
-    public class httpGetControllers : Controller
+    public class httpGetController : Controller
     {
+        // To call this url "https://localhost:5001/isac/3/444"
         // 如果不用route[] 那麼這一個controller裡面就只能有一個method, 如果你把logcontroller or memberController 裡面的route拿掉 那就會無法build
         [HttpGet("{name}/{number}/{date}")]
         public string onlyOneMethodInThisController(string name, int number, string date)
